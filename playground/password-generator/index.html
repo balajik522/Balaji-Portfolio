@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator | Balaji Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1><i class="fas fa-lock"></i> Password Generator</h1>
+
+    <div class="password-box">
+
+        <input type="text" id="password" readonly>
+
+        <button id="copyBtn">
+            <i class="fas fa-copy"></i>
+        </button>
+
+    </div>
+
+    <div class="options">
+
+        <label>
+            Password Length
+            <span id="lengthValue">12</span>
+        </label>
+
+        <input
+            type="range"
+            id="length"
+            min="6"
+            max="30"
+            value="12">
+
+        <label>
+            <input type="checkbox" id="uppercase" checked>
+            Uppercase Letters
+        </label>
+
+        <label>
+            <input type="checkbox" id="lowercase" checked>
+            Lowercase Letters
+        </label>
+
+        <label>
+            <input type="checkbox" id="numbers" checked>
+            Numbers
+        </label>
+
+        <label>
+            <input type="checkbox" id="symbols" checked>
+            Symbols
+        </label>
+
+    </div>
+
+    <button class="generate" id="generateBtn">
+        Generate Password
+    </button>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,204 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Poppins,sans-serif;
+}
+
+body{
+
+    background:#0B0F19;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    min-height:100vh;
+
+}
+
+.container{
+
+    width:420px;
+
+    background:rgba(255,255,255,.05);
+
+    backdrop-filter:blur(15px);
+
+    border:1px solid rgba(0,191,255,.2);
+
+    border-radius:20px;
+
+    padding:30px;
+
+    box-shadow:0 0 25px rgba(0,191,255,.15);
+
+}
+
+h1{
+
+    color:#00BFFF;
+
+    text-align:center;
+
+    margin-bottom:25px;
+
+}
+
+.input-box{
+
+    display:flex;
+
+    gap:10px;
+
+}
+
+.input-box input{
+
+    flex:1;
+
+    padding:14px;
+
+    border:none;
+
+    outline:none;
+
+    border-radius:12px;
+
+    background:#111827;
+
+    color:white;
+
+    font-size:16px;
+
+}
+
+.input-box button{
+
+    width:55px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:#00BFFF;
+
+    color:white;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.input-box button:hover{
+
+    background:#0099cc;
+
+}
+
+ul{
+
+    margin-top:25px;
+
+    list-style:none;
+
+}
+
+li{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    background:#1C2538;
+
+    color:white;
+
+    padding:14px;
+
+    border-radius:12px;
+
+    margin-bottom:12px;
+
+    transition:.3s;
+
+}
+
+li.completed{
+
+    opacity:.6;
+
+    text-decoration:line-through;
+
+}
+
+.task{
+
+    flex:1;
+
+    cursor:pointer;
+
+}
+
+.delete{
+
+    color:#ff5d5d;
+
+    cursor:pointer;
+
+    font-size:18px;
+
+}
+
+.footer{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-top:20px;
+
+    color:#b8c1d1;
+
+}
+
+.clear-btn{
+
+    background:#ff5d5d;
+
+    border:none;
+
+    color:white;
+
+    padding:10px 15px;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.clear-btn:hover{
+
+    background:#e04444;
+
+}
+
+@media(max-width:480px){
+
+.container{
+
+    width:95%;
+
+}
+
+}

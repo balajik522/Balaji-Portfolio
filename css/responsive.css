@@ -1,0 +1,193 @@
+/* =========================================
+   RESPONSIVE CSS
+========================================= */
+
+/* ===========================
+   TABLET (992px and below)
+=========================== */
+
+@media (max-width:992px){
+
+    section{
+        padding:80px 8%;
+    }
+
+    /* Home */
+
+    .home{
+        flex-direction:column;
+        text-align:center;
+        gap:50px;
+    }
+
+    .home-buttons{
+        justify-content:center;
+        flex-wrap:wrap;
+    }
+
+    .social-icons{
+        justify-content:center;
+    }
+
+    /* About */
+
+    .about-container{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .about-stats{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    /* Skills */
+
+    .skills-container{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    /* Featured Project */
+
+    .featured-project{
+        flex-direction:column;
+    }
+
+    /* Resume */
+
+    .resume-container{
+        grid-template-columns:1fr;
+    }
+
+    .resume-frame{
+        height:500px;
+    }
+
+    /* Contact */
+
+    .contact-container{
+        grid-template-columns:1fr;
+    }
+
+    /* Footer */
+
+    .footer-container{
+        grid-template-columns:1fr;
+        text-align:center;
+    }
+
+    .footer-icons{
+        justify-content:center;
+    }
+
+    .footer-bottom{
+        flex-direction:column;
+    }
+    .github-container{
+
+    grid-template-columns:1fr;
+
+    }
+    .playground-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+    }
+
+}
+
+/* ===========================
+   MOBILE (768px and below)
+=========================== */
+
+@media (max-width:768px){
+
+    section{
+        padding:70px 6%;
+    }
+
+    .header{
+        padding:18px 6%;
+    }
+
+    .navbar{
+        display:none;
+    }
+
+    .home{
+        gap:40px;
+    }
+
+    .home-content h1{
+        font-size:48px;
+    }
+
+    .home-content h2{
+        font-size:28px;
+    }
+
+    .section-title h2{
+        font-size:38px;
+    }
+
+    .about-stats{
+        grid-template-columns:1fr;
+    }
+
+    .skills-container{
+        grid-template-columns:1fr;
+    }
+
+    .resume-frame{
+        height:420px;
+    }
+    .github-card{
+    flex-direction:column;
+    text-align:center;
+    }
+    .github-stats{
+    justify-content:center;
+    flex-wrap:wrap;
+    }
+    .playground-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+}
+
+/* ===========================
+   SMALL MOBILE (480px)
+=========================== */
+
+@media (max-width:480px){
+
+    .home-content h1{
+        font-size:38px;
+    }
+
+    .home-content h2{
+        font-size:22px;
+    }
+
+    .btn-primary,
+    .btn-secondary,
+    .resume-btn{
+        width:100%;
+        text-align:center;
+    }
+
+    .home-buttons{
+        flex-direction:column;
+        width:100%;
+    }
+
+    .social-icons{
+        gap:15px;
+    }
+
+    .resume-frame{
+        height:350px;
+    }
+
+}

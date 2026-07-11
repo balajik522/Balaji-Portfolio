@@ -1,0 +1,148 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Poppins,sans-serif;
+}
+
+body{
+
+    background:#0B0F19;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    min-height:100vh;
+
+}
+
+.container{
+
+    width:100%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+.stopwatch{
+
+    width:400px;
+
+    background:rgba(255,255,255,.05);
+
+    backdrop-filter:blur(18px);
+
+    border:1px solid rgba(0,191,255,.25);
+
+    border-radius:20px;
+
+    padding:35px;
+
+    text-align:center;
+
+    box-shadow:0 0 30px rgba(0,191,255,.15);
+
+}
+
+.stopwatch h1{
+
+    color:#00BFFF;
+
+    margin-bottom:30px;
+
+}
+
+.time{
+
+    font-size:55px;
+
+    font-weight:bold;
+
+    color:#fff;
+
+    margin-bottom:35px;
+
+    letter-spacing:2px;
+
+}
+
+.buttons{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:15px;
+
+    flex-wrap:wrap;
+
+}
+
+button{
+
+    padding:14px 22px;
+
+    border:none;
+
+    border-radius:12px;
+
+    cursor:pointer;
+
+    font-size:16px;
+
+    background:#1C2538;
+
+    color:white;
+
+    transition:.3s;
+
+}
+
+button:hover{
+
+    background:#00BFFF;
+
+    transform:translateY(-4px);
+
+}
+
+button i{
+
+    margin-right:8px;
+
+}
+
+@media(max-width:480px){
+
+.stopwatch{
+
+    width:95%;
+
+}
+
+.time{
+
+    font-size:40px;
+
+}
+
+.buttons{
+
+    flex-direction:column;
+
+}
+
+button{
+
+    width:100%;
+
+}
+
+}

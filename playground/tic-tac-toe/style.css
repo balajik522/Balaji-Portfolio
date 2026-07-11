@@ -1,0 +1,298 @@
+/* ==========================================
+   TIC TAC TOE - STYLE.CSS
+========================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Poppins",sans-serif;
+}
+
+body{
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:#0B0F19;
+
+    color:#fff;
+
+    padding:20px;
+
+}
+
+.container{
+
+    width:100%;
+
+    display:flex;
+
+    justify-content:center;
+
+}
+
+.game-card{
+
+    width:420px;
+
+    background:rgba(255,255,255,.05);
+
+    backdrop-filter:blur(16px);
+
+    border:1px solid rgba(0,191,255,.25);
+
+    border-radius:20px;
+
+    padding:30px;
+
+    box-shadow:0 0 30px rgba(0,191,255,.15);
+
+}
+
+.game-card h1{
+
+    text-align:center;
+
+    color:#00BFFF;
+
+    margin-bottom:10px;
+
+    font-size:32px;
+
+}
+
+.subtitle{
+
+    text-align:center;
+
+    color:#b8b8b8;
+
+    margin-bottom:25px;
+
+}
+
+.status{
+
+    text-align:center;
+
+    background:#162033;
+
+    border-radius:12px;
+
+    padding:12px;
+
+    margin-bottom:25px;
+
+    color:#00BFFF;
+
+    font-weight:600;
+
+    font-size:18px;
+
+}
+
+.board{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:15px;
+
+}
+
+.cell{
+
+    width:110px;
+
+    height:110px;
+
+    background:#162033;
+
+    border:2px solid rgba(0,191,255,.25);
+
+    border-radius:15px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:50px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.cell:hover{
+
+    transform:translateY(-4px);
+
+    border-color:#00BFFF;
+
+    box-shadow:0 0 20px rgba(0,191,255,.25);
+
+}
+
+.cell.x{
+
+    color:#00BFFF;
+
+}
+
+.cell.o{
+
+    color:#ff6b81;
+
+}
+
+.cell.win{
+
+    background:#00BFFF;
+
+    color:#fff;
+
+    animation:glow .8s infinite alternate;
+
+}
+
+@keyframes glow{
+
+    from{
+
+        box-shadow:0 0 10px #00BFFF;
+
+    }
+
+    to{
+
+        box-shadow:0 0 30px #00BFFF;
+
+    }
+
+}
+
+.buttons{
+
+    margin-top:30px;
+
+    text-align:center;
+
+}
+
+.buttons button{
+
+    border:none;
+
+    background:#00BFFF;
+
+    color:#fff;
+
+    padding:14px 28px;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    font-size:16px;
+
+    transition:.3s;
+
+}
+
+.buttons button:hover{
+
+    background:#0095d9;
+
+    transform:translateY(-3px);
+
+}
+
+.score-board{
+
+    margin-top:30px;
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:15px;
+
+}
+
+.score{
+
+    background:#162033;
+
+    border-radius:15px;
+
+    padding:15px;
+
+    text-align:center;
+
+}
+
+.score h2{
+
+    color:#00BFFF;
+
+    margin-bottom:8px;
+
+    font-size:30px;
+
+}
+
+.score span{
+
+    color:#b8b8b8;
+
+    font-size:14px;
+
+}
+
+/* Mobile */
+
+@media(max-width:480px){
+
+.game-card{
+
+    width:100%;
+
+    padding:20px;
+
+}
+
+.cell{
+
+    width:90px;
+
+    height:90px;
+
+    font-size:40px;
+
+}
+
+.score-board{
+
+    gap:10px;
+
+}
+
+.score h2{
+
+    font-size:24px;
+
+}
+
+}

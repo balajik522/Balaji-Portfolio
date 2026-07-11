@@ -1,0 +1,302 @@
+/* ==========================================
+   TYPING SPEED TEST - STYLE.CSS
+========================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Poppins",sans-serif;
+}
+
+body{
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:#0B0F19;
+
+    color:#fff;
+
+    padding:20px;
+
+}
+
+.container{
+
+    width:100%;
+
+    display:flex;
+
+    justify-content:center;
+
+}
+
+.typing-card{
+
+    width:850px;
+
+    background:rgba(255,255,255,.05);
+
+    backdrop-filter:blur(15px);
+
+    border:1px solid rgba(0,191,255,.25);
+
+    border-radius:20px;
+
+    padding:35px;
+
+    box-shadow:0 0 30px rgba(0,191,255,.15);
+
+}
+
+.typing-card h1{
+
+    text-align:center;
+
+    color:#00BFFF;
+
+    margin-bottom:10px;
+
+    font-size:34px;
+
+}
+
+.subtitle{
+
+    text-align:center;
+
+    color:#b8b8b8;
+
+    margin-bottom:25px;
+
+}
+
+.typing-area{
+
+    background:#162033;
+
+    border-radius:15px;
+
+    padding:25px;
+
+    min-height:180px;
+
+    line-height:2;
+
+    font-size:20px;
+
+    margin-bottom:25px;
+
+    user-select:none;
+
+}
+
+.typing-area p{
+
+    word-break:break-word;
+
+}
+
+.typing-area p span{
+
+    position:relative;
+
+}
+
+.correct{
+
+    color:#00ff99;
+
+}
+
+.incorrect{
+
+    color:#ff4d6d;
+
+    background:rgba(255,77,109,.15);
+
+    border-radius:4px;
+
+}
+
+.active{
+
+    border-bottom:2px solid #00BFFF;
+
+}
+
+textarea{
+
+    width:100%;
+
+    height:120px;
+
+    border:none;
+
+    outline:none;
+
+    resize:none;
+
+    border-radius:15px;
+
+    background:#162033;
+
+    color:#fff;
+
+    padding:18px;
+
+    font-size:18px;
+
+    margin-bottom:30px;
+
+}
+
+textarea::placeholder{
+
+    color:#888;
+
+}
+
+.stats{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:20px;
+
+    margin-bottom:30px;
+
+}
+
+.stat-box{
+
+    background:#162033;
+
+    border-radius:15px;
+
+    padding:20px;
+
+    text-align:center;
+
+    transition:.3s;
+
+}
+
+.stat-box:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:0 0 15px rgba(0,191,255,.2);
+
+}
+
+.stat-box h2{
+
+    color:#00BFFF;
+
+    font-size:34px;
+
+    margin-bottom:8px;
+
+}
+
+.stat-box span{
+
+    color:#b8b8b8;
+
+    font-size:14px;
+
+}
+
+.buttons{
+
+    display:flex;
+
+    justify-content:center;
+
+}
+
+.buttons button{
+
+    padding:15px 35px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:#00BFFF;
+
+    color:#fff;
+
+    cursor:pointer;
+
+    font-size:17px;
+
+    transition:.3s;
+
+}
+
+.buttons button:hover{
+
+    background:#0097d6;
+
+    transform:translateY(-3px);
+
+}
+
+@media(max-width:900px){
+
+.typing-card{
+
+    width:100%;
+
+}
+
+.stats{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+@media(max-width:600px){
+
+.typing-card{
+
+    padding:20px;
+
+}
+
+.typing-area{
+
+    font-size:17px;
+
+}
+
+textarea{
+
+    height:100px;
+
+}
+
+.stats{
+
+    grid-template-columns:1fr;
+
+}
+
+.stat-box h2{
+
+    font-size:28px;
+
+}
+
+}
